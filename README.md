@@ -1,21 +1,21 @@
-#tsys01-python
+# tsys01-python
 
-A python module to interface with the TSYS01 temperature sensor. Tested on Raspberry Pi 3 with Raspbian.
+A Python module to interface with the TSYS01 temperature sensor. Tested on Raspberry Pi 3 with Raspbian.
 
 The python SMBus library must be installed.
 
 	sudo apt-get install python-smbus
 
-#Usage
+# Usage
 
 	import tsys01
 
-###TSYS01(bus=1)
+### TSYS01(bus=1)
 
 	sensor = tsys01.TSYS01() # Use default I2C bus 1
 	sensor = tsys01.TSYS01(0) # Specify I2C bus 0
 
-###init()
+### init()
 
 Initialize the sensor. This needs to be called before using any other methods.
 
@@ -23,15 +23,15 @@ Initialize the sensor. This needs to be called before using any other methods.
 
 Returns true if the sensor was successfully initialized, false otherwise.
 
-###read()
+### read()
 
 Read the sensor and update the temperature.
 
     sensor.read()
-        
+
 Returns True if read was successful, False otherwise.
 
-###temperature(conversion=UNITS_Centigrade)
+### temperature(conversion=UNITS_Centigrade)
 
 Get the most recent temperature measurement.
 
