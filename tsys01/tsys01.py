@@ -1,7 +1,7 @@
 try:
     import smbus
 except:
-    print 'Try sudo apt-get install python-smbus'
+    print('Try sudo apt-get install python-smbus')
     
 from time import sleep
 
@@ -56,7 +56,7 @@ class TSYS01(object):
         
     def read(self):
         if self._bus is None:
-            print "No bus!"
+            print("No bus!")
             return False
         
         # Request conversion
