@@ -28,7 +28,7 @@ class TSYS01(object):
         try:
             self._bus = smbus.SMBus(bus)
         except:
-            print("Bus %d is not available.") % bus
+            print("Bus %d is not available."%bus)
             print("Available busses are listed as /dev/i2c*")
             self._bus = None
         
