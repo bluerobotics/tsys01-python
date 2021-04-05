@@ -1,1 +1,1 @@
-from tsys01 import TSYS01
+from .tsys01 import TSYS01
