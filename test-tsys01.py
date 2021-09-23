@@ -14,6 +14,8 @@ with llog.LLogWriter(args.meta, args.output) as log:
     if not sensor.init():
         log.log_error("Error initializing sensor")
         exit(1)
+        
+    log.log_rom(' '.join(sensor._k))
 
     def data_getter():
         if not sensor.read():
