@@ -17,5 +17,30 @@
         "dtype": "float"
       }
     ]
+  },
+  "5": {
+    "llType": "rom",
+    "columns": [
+      {
+        "llabel": "k0",
+        "dtype": "int"
+      },
+      {
+        "llabel": "k1",
+        "dtype": "int"
+      },
+      {
+        "llabel": "k2",
+        "dtype": "int"
+      },
+      {
+        "llabel": "k3",
+        "dtype": "int"
+      },
+      {
+        "llabel": "k4",
+        "dtype": "int"
+      }
+    ]
   }
 }
