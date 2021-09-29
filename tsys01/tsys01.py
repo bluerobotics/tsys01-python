@@ -20,7 +20,7 @@ class TSYS01(object):
     _TSYS01_CONVERT     = 0x48
     _TSYS01_READ        = 0x00
 
-    def __init__(self, bus=1):
+    def __init__(self, bus=6):
         # Degrees C
         self._temperature = 0
         self._k = []
