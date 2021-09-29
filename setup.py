@@ -14,6 +14,7 @@ setup(name='bluerobotics-tsys01',
     author_email='support@bluerobotics.com',
     url='https://www.bluerobotics.com',
     packages=find_packages(),
+    package_data={ "tsys01": ["tsys01.meta"]},
     classifiers=[
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
