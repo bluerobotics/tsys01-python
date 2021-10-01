@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -13,7 +13,7 @@ setup(name='bluerobotics-tsys01',
     author='Blue Robotics',
     author_email='support@bluerobotics.com',
     url='https://www.bluerobotics.com',
-    packages=find_packages(),
+    packages=["tsys01"],
     package_data={ "tsys01": ["tsys01.meta"]},
     entry_points={
         'console_scripts': [
