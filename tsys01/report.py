@@ -7,6 +7,9 @@ def generate_figures(log):
 
     f, spec = log.figure(height_ratios=[1,1], suptitle=f'tsys01 data', footer=footer)
 
+    plt.subplot(spec[0,:])
+    log.data.temperature.pplot()
+
     plt.subplot(spec[1,:])
 
     # todo check if log.error exists
@@ -14,9 +17,6 @@ def generate_figures(log):
         log.error.ttable(rl=True)
     except:
         pass
-
-    plt.subplot(spec[1,:])
-    log.data.temperature.pplot()
 
 def main():
     from llog import LLogReader
