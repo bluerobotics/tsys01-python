@@ -10,7 +10,7 @@ args = parser.parse_args()
 with LLogWriter(args.meta, args.output, console=args.console) as log:
     tsys = TSYS01()
     if not tsys.init():
-        print("Failed to initialize Keller LD sensor!")
+        print("Failed to initialize sensor!")
         exit(1)
     def data_getter():
         tsys.read()
