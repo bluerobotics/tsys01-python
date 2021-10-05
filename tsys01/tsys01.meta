@@ -3,7 +3,7 @@
     "llType": "error",
     "columns": [
       {
-        "llabel": "error message",
+        "llabel": "message",
         "dtype": "str"
       }
     ]
@@ -14,7 +14,8 @@
       {
         "llabel": "temperature",
         "units": "degC",
-        "dtype": "float"
+        "dtype": "float",
+        "color": "deeppink"
       }
     ]
   }
