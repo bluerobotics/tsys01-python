@@ -1,0 +1,11 @@
+*.pdf
+*.csv
+
+**/__pycache__
+**/.coverage
+**/.mypy_cache
+**/.pytest_cache
+**/*.pyc
+**/dist
+**/*.egg-info
+**/build
