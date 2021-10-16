@@ -1,7 +1,7 @@
 try:
-    import smbus
+    import smbus2
 except:
-    print('Try sudo apt-get install python-smbus')
+    print('try pip install smbus2')
 
 from time import sleep
 
@@ -26,7 +26,7 @@ class TSYS01(object):
         self._k = []
 
         try:
-            self._bus = smbus.SMBus(bus)
+            self._bus = smbus2.SMBus(bus)
         except:
             print("Bus %d is not available."%bus)
             print("Available busses are listed as /dev/i2c*")
