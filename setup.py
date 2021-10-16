@@ -27,6 +27,6 @@ setup(name='bluerobotics-tsys01',
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'smbus',
+        'smbus2',
     ]
 )
