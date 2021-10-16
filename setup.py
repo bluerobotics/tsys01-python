@@ -25,5 +25,8 @@ setup(name='bluerobotics-tsys01',
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+    ],
+    install_requires=[
+        'smbus',
     ]
 )
